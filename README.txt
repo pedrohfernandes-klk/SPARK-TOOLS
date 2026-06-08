@@ -1,29 +1,33 @@
-THE DOUBT ENGINE
+SPARK TOOLS
 
-Static launcher plus installed one-button HTML apps.
+Text tools for better questions, bad advice, crooked definitions, and useful doubt.
 
-Included finished modules:
+Included finished tools:
 - SAID IT
-- BADVICE
 - IDK MACHINE
-- BAD EVIDENCE
 - FALSE POSITIVE
+- BADVICE
+- BAD EVIDENCE
 
-Included provisional module:
+Included provisional tool:
 - TILT
 
 Folder structure:
 /index.html
 /said-it/index.html
-/badvice/index.html
 /idk-machine/index.html
-/bad-evidence/index.html
 /false-positive/index.html
+/badvice/index.html
 /tilt/index.html
+/bad-evidence/index.html
 
-Deployment:
-This is a static site. Put the contents of this folder at the root of a GitHub repository and enable GitHub Pages from the main branch root.
+How it works:
+The root index.html is a mobile-first one-page host. It opens each tool inside a same-site iframe, so only one tool is visible at a time.
+Each tool remains a separate self-contained index.html and can be replaced independently.
+
+WordPress deployment:
+Upload the folder as /spark-tools/ inside your hosting file manager.
+The live URL should be /spark-tools/.
 
 No build step.
 No backend.
-Each module remains a self-contained HTML file.
